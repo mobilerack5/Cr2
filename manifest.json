@@ -1,0 +1,22 @@
+{
+    "name": "CsirkeKereszt Tét",
+    "short_name": "CsirkeKereszt",
+    "description": "Kockázati játék 20 sávos futamokkal.",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#333333",
+    "theme_color": "#4caf50",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

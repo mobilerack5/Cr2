@@ -1,0 +1,122 @@
+/* Alapbeállítások */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #333;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden; /* Nincs görgetés */
+}
+
+h1 {
+    color: #ffc107;
+    margin-top: 0;
+}
+
+/* Menü UI */
+#menuUI {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    width: 90%;
+    max-width: 400px;
+}
+
+.kassza-display {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4caf50;
+    margin-bottom: 15px;
+}
+
+#gameMessage {
+    font-size: 0.9em;
+    color: #ccc;
+    text-align: center;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444;
+    color: #eee;
+    box-sizing: border-box; /* Fontos a padding miatt */
+    font-size: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #212121;
+    background-color: #ffc107; /* Sárga */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+button:hover {
+    background-color: #ffca28;
+}
+
+/* Játék UI */
+#gameUI {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+canvas {
+    background-color: #1a1a1a;
+    border: 3px solid #000;
+    /* A vászon méretét fixen tartjuk, de a böngésző kicsinyítheti */
+    width: 100%;
+    max-width: 600px;
+    max-height: 600px;
+    object-fit: contain;
+}
+
+#gameHud {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #222;
+    font-size: 0.8em;
+    flex-wrap: wrap; /* Mobilon tördelés */
+}
+#gameHud span {
+    margin: 2px 5px;
+}
+
+/* Segédosztály */
+.hidden {
+    display: none !important;
+}
